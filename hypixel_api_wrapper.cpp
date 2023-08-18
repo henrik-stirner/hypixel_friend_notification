@@ -68,7 +68,6 @@ string fetch_data(string url, list<string> headers) {
 		return "";
 	}
 
-	cout << data.str() << endl;
 	return data.str();
 }
 
