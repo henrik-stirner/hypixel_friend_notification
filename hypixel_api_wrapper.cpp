@@ -112,7 +112,7 @@ json get_player_data(string player_uuid) {
 	string url = PLAYER_DATA_URL + player_uuid;
 
 	list<string> headers;
-	headers.push_back("API-Key: " + HYPIXEL_API_KEY);
+	headers.push_back("API-Key:" + HYPIXEL_API_KEY);
 
 	string raw_data = fetch_data(url, headers);
 
